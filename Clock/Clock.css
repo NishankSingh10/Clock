@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(35, 43, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.clock{
+    height: 300px;
+    width: 300px;
+    background-image: url(roman-numerals-png-42134.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border: 4px solid   rgb(35, 43, 61);
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                 0 -15px 15px rgba(0,0,0,0.05),
+                inset 0 -15px 15px rgba(0,0,0,0.05);
+
+
+}
+.block{
+    height: 20px;
+    width: 80px;
+    position: relative;
+    top: 138px;
+    left: 80px;
+    background-color:  rgb(35, 43, 61);
+}
+.clock:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+.clock .hour,
+.clock .minute ,
+.clock.seccond{
+    position: absolute;
+}
+.clock .hour .hr{
+    width: 160px;
+    height: 160px;
+}
+.clock .minute .min{
+    width: 190px;
+    height: 190px;
+}
+.clock .second .sec{
+    width: 230px;
+    height: 230px;
+}
+
+.hr,.min,.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    border-radius: 50%;
+
+}
+.hr:before{
+    content:'';
+    position: absolute;
+    width: 7px;
+    height: 75px;
+    background-color: rgb(247, 0, 82);
+    z-index:10;
+    margin-bottom: 80px;
+    border-radius: 6px 6px 0px 0px;
+}
+.min:before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: rgb(0, 161, 247);
+    z-index:50;
+    margin-bottom: 80px;
+    border-radius: 6px 6px 0px 0px;
+}
+.sec:before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    height: 120px;
+    background-color: rgb(113, 174, 225);
+    z-index:100;
+    margin-bottom: 80px;
+    border-radius: 6px 6px 0px 0px;
+}
+.circle{
+    position: relative;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    left:235px;
+    z-index:500;
+}

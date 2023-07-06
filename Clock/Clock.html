@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="Clock.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="block"></div>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="minute">
+                <div class="min" id="min"></div>
+            </div>
+            <div class="second">
+                <div class="sec" id="sec"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javaScript">
+        const deg=6;
+        let hr= document.getElementById("hr");
+        let min= document.getElementById("min");
+        let sec= document.getElementById("sec");
+        
+        setInterval(()=>{
+            let day = new Date();
+            let hh= day.getHours()*30;
+            let mm= day.getMinutes()*deg;
+            let ss= day.getSeconds()*deg;
+        
+            hr.style.transform=`rotateZ(${(hh)+(mm/12)})deg)`;
+            min.style.transform=`rotateZ(${(mm/12)})deg)`;
+            sec.style.transform=`rotateZ(${ss})deg)`;
+        })
+    
+    </script> -->
+    
+</body>
+<script src="Clock.js"></script>
+
+</html>
